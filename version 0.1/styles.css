@@ -1,0 +1,43 @@
+#container {
+    border: 2px solid black;
+    margin: 2px;
+}
+
+#resource-container {
+    border: 2px solid black;
+    margin: 2px;
+    display: flex;
+}
+
+#products-container {
+    border: 2px solid black;
+    margin: 2px;
+    display: flex;
+}
+
+.products-container {
+    border: 2px solid red;
+    margin: 2px;
+    padding: 2px;
+    width: 50%;
+}
+
+.product {
+    border: 2px solid blue;
+    margin: 2px;
+    padding: 5px;
+    margin:2px;
+}
+
+progress {
+    width: 75%;
+    display: block;
+    margin: auto;
+    bordwr: 10px solid black;
+}
+
+button {
+    width: 75%;
+    display: block;
+    margin: auto;
+};

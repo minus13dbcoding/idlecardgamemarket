@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="updateproductUI()">
+    <div id="container">
+        <div id="resource-container">
+            <p>Cash £<span id="cash-UI">0</wpan></p>
+        </div>
+       <div id="products-container">
+            <div class="products-container" id="left-products-container">
+                <div class="product" id="commmon-card">
+                 <p><b>Common Card</b></p> 
+                 <p><b>level: </b><span id="common-card-level">0</span></p>
+                 <p><b>Cost:</b> £<span id="common-card-cost">0</span></p>                    
+                 <p><b>Income: </b> £<span id="common-card-income">0</span></p>
+                <p><b>Time: </b><span id="common-card-times">0.0</span></p>
+                <progress></progress>
+                    <button id="common-card-btn" onclick="buy(commonCard)">Level Up</button>
+                </div>
+              <div class="product" id="booster-pack">
+                 <p><b>Booster Pack</b></p> 
+                 <p><b>level: </b><span id="booster-pack-level">0</span></p>
+                 <p><b>Cost:</b> £<span id="booster-pack-cost">0</span></p>                    
+                 <p><b>Income: </b> £<span id="booster-pack-income">0</span></p>
+                <p><b>Time: </b><span id="booster-pack-times">0.0</span></p>
+                <progress></progress>
+                    <button id="common-card-btn" onclick="buy(boosterPack)">Level Up</button>
+                </div>
+            </div>
+            <div class="products-container" id="right-products-container">
+                
+            <div class="product" id="uncommmon-card">
+                 <p><b>Uncommon Card</b></p> 
+                 <p><b>level: </b><span id="uncommon-card-level">0</span></p>
+                 <p><b>Cost:</b> £<span id="uncommon-card-cost">0</span></p>                    
+                 <p><b>Income: </b> £<span id="uncommon-card-income">0</span></p>
+                <p><b>Time: </b><span id="uncommon-card-times">0.0</span></p>
+                <progress></progress>
+                    <button id="uncommon-card-btn" onclick="buy(uncommonCard)">Level Up</button>
+                </div>
+            </div>
+       </div>
+    </div>    
+</body>
+</html>
