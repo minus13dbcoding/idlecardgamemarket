@@ -27,16 +27,24 @@ class Product {
 let commonCard = new Product("Common Card", 10, 0, 1, 1000, 0)
 let uncommonCard = new Product("Uncommon Card", 75, 0, 10, 2000, 0)
 let boosterPack = new Product("Booster Park", 500, 0, 125, 5000, 0)
+let rareCard = new Product("Booster Park", 3500, 0, 1250, 10000, 0)
+let cardSleeves = new Product("Booster Park", 27000, 0, 12500, 20000, 0)
+let deckBox = new Product("Booster Park", 237500, 0, 93750, 30000, 0)
 
-let productList = [commonCard, uncommonCard, boosterPack]
+
+
+let productList = [commonCard, uncommonCard, boosterPack, rareCard, cardSleeves, deckBox]
 
 
 //Products will revert to this on game reset
 const commonCardReset = new Product("Common Card", 10, 0, 1, 1000, 0)
 const uncommonCardReset = new Product("Uncommon Card", 75, 0, 10, 2000, 0)
 const boosterPackReset = new Product("Booster Park", 250, 0, 125, 5000, 0)
+let rareCardReset = new Product("Booster Park", 3500, 0, 1250, 10000, 0)
+let cardSleevesReset = new Product("Booster Park", 27000, 0, 12500, 20000, 0)
+let deckBoxReset = new Product("Booster Park", 237500, 0, 93750, 30000, 0)
 
-let productListReset = [commonCardReset, uncommonCardReset, boosterPackReset]
+let productListReset = [commonCardReset, uncommonCardReset, boosterPackReset, rareCardReset, cardSleevesReset, deckBoxReset]
 
 // This function allows a timer to be started for each product, adding its income to the cash each imer period, based on the products time.
 function startTimer(product) {
@@ -103,6 +111,19 @@ function updateproductUI() {
     document.getElementById("booster-pack-income").innerHTML = boosterPack.income
     document.getElementById("booster-pack-cost").innerHTML = boosterPack.cost
     document.getElementById("booster-pack-times").innerHTML = boosterPack.timesec
+    document.getElementById("rare-card-level").innerHTML = rareCard.level
+    document.getElementById("rare-card-income").innerHTML = rareCard.income
+    document.getElementById("rare-card-cost").innerHTML = rareCard.cost
+    document.getElementById("rare-card-times").innerHTML = rareCard.timesec
+    document.getElementById("card-sleeves-level").innerHTML = cardSleeves.level
+    document.getElementById("card-sleeves-income").innerHTML = cardSleeves.income
+    document.getElementById("card-sleeves-cost").innerHTML = cardSleeves.cost
+    document.getElementById("card-sleeves-times").innerHTML = cardSleeves.timesec
+    document.getElementById("deck-box-level").innerHTML = deckBox.level
+    document.getElementById("deck-box-income").innerHTML = deckBox.income
+    document.getElementById("deck-box-cost").innerHTML = deckBox.cost
+    document.getElementById("deck-box-times").innerHTML = deckBox.timesec
+    
 }
 
 //This function give bonus based in levelsbreached@ it will trigger on every 100, 50, 25 and 10 lwvels, with the highest level multiplier activatong fisrt.
