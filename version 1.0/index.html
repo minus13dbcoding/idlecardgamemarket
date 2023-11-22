@@ -41,6 +41,15 @@
                 <progress></progress>
                     <button id="common-card-btn" onclick="buy(boosterPack)">Level Up</button>
                 </div>
+                <div class="product" id="card-sleeves">
+                    <p><b>Card Sleeves</b></p> 
+                    <p><b>level: </b><span id="card-sleeves-level">0</span></p>
+                    <p><b>Cost:</b> £<span id="card-sleeves-cost">0</span></p>                    
+                    <p><b>Income: </b> £<span id="card-sleeves-income">0</span></p>
+                   <p><b>Time: </b><span id="card-sleeves-times">0.0</span></p>
+                   <progress></progress>
+                       <button id="card-sleeves-btn" onclick="buy(cardSleeves)">Level Up</button>
+                   </div>
             </div>
             <div class="products-container" id="right-products-container">
                 
@@ -53,6 +62,24 @@
                 <progress></progress>
                     <button id="uncommon-card-btn" onclick="buy(uncommonCard)">Level Up</button>
                 </div>
+                <div class="product" id="rare-card">
+                    <p><b>Rare Card</b></p> 
+                    <p><b>level: </b><span id="rare-card-level">0</span></p>
+                    <p><b>Cost:</b> £<span id="rare-card-cost">0</span></p>                    
+                    <p><b>Income: </b> £<span id="rare-card-income">0</span></p>
+                   <p><b>Time: </b><span id="rare-card-times">0.0</span></p>
+                   <progress></progress>
+                       <button id="rare-card-btn" onclick="buy(rareCard)">Level Up</button>
+                   </div>
+                   <div class="product" id="deck-box">
+                    <p><b>Deck Box</b></p> 
+                    <p><b>level: </b><span id="deck-box-level">0</span></p>
+                    <p><b>Cost:</b> £<span id="deck-box-cost">0</span></p>                    
+                    <p><b>Income: </b> £<span id="deck-box-income">0</span></p>
+                   <p><b>Time: </b><span id="deck-box-times">0.0</span></p>
+                   <progress></progress>
+                       <button id="deck-box-btn" onclick="buy(deckBox)">Level Up</button>
+                   </div>
             </div>
        </div>
     </div>    
